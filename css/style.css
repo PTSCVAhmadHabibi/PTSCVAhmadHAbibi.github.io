@@ -1,0 +1,118 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+nav .navbar {
+    display: flex;
+    align-items: center;
+    border-radius: 70px;
+}
+
+nav .navbar img {
+    border-radius: 70%;
+    width: 40px;    
+}
+
+nav h1 {
+    font-style: italic;
+    color: white;
+    margin-left: 1vh;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+nav ul li a {
+    color: antiquewhite;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 15px;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    text-shadow: 0px 0 5px rgba(234, 234, 238, .95);
+}
+
+li a button {
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    background-color: rgba(5, 5, 5, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+    box-shadow: 0 0 5px 0 white;
+    justify-content: space-between;
+    backdrop-filter: blur(50px);
+    z-index: 9999;
+}
+
+.foto img {
+    width: 300px;
+    border-radius: 50%;
+    z-index: 1;
+    backdrop-filter: blur(50px);
+    border: 5px solid rgba(240, 248, 255, .5);
+}
+
+div .foto h1{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 10px;
+    font-style: italic;
+}
+
+.home {
+    min-height: 100vh;
+    background: darkblue;
+    display: grid;
+    place-items: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 20;
+    background-image: url('../Assets/Circuit.jpg');
+    background-blend-mode: exclusion;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+.foto {
+    display: grid;
+    padding-top: 10vh;
+    place-items: center;
+}
+
+.home marquee {
+    text-align: center;
+    color: black;
+    font-size: 100px;
+}
+
